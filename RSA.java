@@ -11,7 +11,7 @@ public class RSA implements Serializable {
     private BigInteger otherE, otherN;  // Other party's public key
 
     public RSA() {
-        // Generate two large primes
+        // Generate two large primes (2048 now for better security)
         int bitLength = 2048;
         Random random = new Random();
         BigInteger p = BigInteger.probablePrime(bitLength, random);
